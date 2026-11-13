@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>~/img/1.png</ImageUrl>
+		<NavigateUrl>http://example.com/info1</NavigateUrl>
+		<AlternateText>Banner Informasi Pertama</AlternateText>
+		<Impressions>50</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/img/2.png</ImageUrl>
+		<NavigateUrl>http://example.com/info2</NavigateUrl>
+		<AlternateText>Banner Informasi Kedua</AlternateText>
+		<Impressions>50</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>~/img/3.png</ImageUrl>
+		<NavigateUrl>http://example.com/info3</NavigateUrl>
+		<AlternateText>Banner Informasi Ketiga</AlternateText>
+		<Impressions>50</Impressions>
+	</Ad>
+</Advertisements>

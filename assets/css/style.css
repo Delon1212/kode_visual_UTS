@@ -1,0 +1,253 @@
+﻿/* ===== RESET & BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ===== LAYOUT UTAMA ===== */
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    position: relative; /* <--- INI YANG PALING PENTING */
+}
+
+    .header h1 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .header p {
+        font-size: 14px;
+        color: #bdc3c7;
+    }
+
+/* Class untuk Logout */
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+    .logout a {
+        color: #e74c3c;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+/* ===== NAVIGASI ===== */
+.nav {
+    display: flex;
+    background: #34495e;
+    border-bottom: 3px solid #2980b9;
+}
+
+.btn-nav {
+    flex: 1;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    color: #ecf0f1;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .btn-nav:hover {
+        background: #2980b9;
+        color: white;
+    }
+
+/* ===== KONTEN ===== */
+.content {
+    padding: 30px;
+}
+
+.card {
+    background: #fdfdfd;
+    border: 1px solid #e1e8ed;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 4px solid #2980b9;
+}
+
+    .card h3 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+    }
+
+/* ===== FORM ===== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #34495e;
+        font-size: 14px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2980b9;
+            box-shadow: 0 0 5px rgba(41, 128, 185, 0.3);
+        }
+
+/* ===== TOMBOL ===== */
+.btn-primary {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+    .btn-primary:hover {
+        background: #219150;
+    }
+
+.btn-danger {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+    .btn-danger:hover {
+        background: #c0392b;
+    }
+
+/* ===== PESAN & LIST ===== */
+.message {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background: #fcf8e3;
+    border-left: 4px solid #f39c12;
+    color: #8a6d3b;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 25px 0;
+}
+
+.data-list {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+    .data-list ul {
+        list-style: none;
+    }
+
+    .data-list li {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+    }
+
+        .data-list li:last-child {
+            border-bottom: none;
+        }
+
+/* ===== SALDO BOX & GRIDVIEW ===== */
+.saldo-box {
+    background: #ecf0f1;
+    border: 2px dashed #bdc3c7;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+    .saldo-box h2 {
+        font-size: 16px;
+        color: #7f8c8d;
+        margin-bottom: 5px;
+    }
+
+    .saldo-box .amount {
+        font-size: 32px;
+        font-weight: bold;
+        color: #27ae60;
+    }
+
+.banner-area {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.grid-view {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+    .grid-view th {
+        background: #2c3e50;
+        color: white;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .grid-view td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
